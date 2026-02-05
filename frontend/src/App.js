@@ -29,140 +29,69 @@ const Portfolio = () => {
 
   const aiProjects = [
     {
-      title: "Hayat AI - Medical Assistant",
-      description: "A two-part AI system for medical diagnostics: Hayat 2.0 analyzes medical images (X-ray/MRI) and Hayat 1.0 explains diagnoses in Arabic using LLMs. The backend integrates image classification and LLM communication through Flask APIs.",
-      tech: ["Python", "LLMs", "Flask API", "Image Classification", "Arabic NLP"],
-      link: "https://github.com/OmarAbuLayla/Hayat",
+      title: "EMG Signal Preprocessing and Feature Extraction",
+      description: "Developed robust EMG preprocessing pipelines including filtering, segmentation, normalization, and artifact handling for multi-channel speech recognition datasets.",
+      tech: ["EMG Preprocessing", "Signal Conditioning", "Feature Extraction", "Quality Control"],
       featured: true
     },
     {
-      title: "Complyt AI - Regulatory Compliance Analyzer",
-      description: "An LLM-powered tool for summarizing and extracting insights from SOPs, CAPAs, and regulatory texts. Uses RAG with FAISS and custom prompts. Designed to evolve into a modular SaaS platform.",
-      tech: ["LLMs", "RAG", "FAISS", "Python", "SaaS"],
-      link: "https://github.com/OmarAbuLayla/Complyt",
+      title: "Signal Processing Front-Ends for EMG Speech Recognition",
+      description: "Evaluated time–frequency and wavelet-based front-end representations to assess their effect on temporal stability and downstream sequence learning.",
+      tech: ["Time–Frequency Analysis", "Wavelet Scattering", "MFSC", "Representation Learning"],
       featured: true
     },
     {
-      title: "Insightify – AI-Powered Data Storytelling",
-      description: "A local LLM-powered tool that transforms raw CSV datasets into structured, human-readable insights. Designed for analysts, strategists, and decision-makers to quickly understand trends, risks, and recommendations — without writing a single line of code.",
-      tech: ["LLMs", "Pandas", "Flask", "Data Analysis", "Private AI"],
-      link: "https://github.com/OmarAbuLayla/Insightify",
+      title: "Subject-Independent Deep Learning Evaluation",
+      description: "Designed training and evaluation protocols focused on cross-subject generalization, targeting robust performance for unseen users with substantial inter-subject variability.",
+      tech: ["Cross-Subject Training", "Sequence Modeling", "Generalization", "Deep Learning"],
       featured: true
     },
     {
-      title: "Local AI-Powered Customer Service Chatbot",
-      description: "A local AI chatbot for customer service that extracts insights about customer needs, preferences, and behaviors. Provides real-time responses while capturing valuable data to help businesses improve decision-making and service strategies.",
-      tech: ["Local LLMs", "Flask", "RAG", "HuggingFace", "Python", "CSV Logging", "Ngrok"],
-      link: "https://github.com/OmarAbuLayla/AI-Chatbot", 
+      title: "Academic Documentation and Manuscript Preparation",
+      description: "Contributed to reproducible experimental documentation, method reporting, and results analysis for peer-reviewed conference and journal manuscript submissions.",
+      tech: ["Experiment Design", "Ablation Analysis", "Reproducibility", "Scientific Writing"],
       featured: true
     }
   ];
 
   const dataProjects = [
     {
-      title: "NYC School Test Scores Analysis",
-      description: "Analyzed NYC public school test scores using data manipulation and visualization techniques to identify performance trends across districts.",
-      tech: ["Python", "Pandas", "Data Visualization"],
-      link: "https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/NY%20Schools.py"
+      title: "J. Matouq, O. Abulayla, R. N. Khushaba, and A. Al-Jumaily, “Sentence-level Speech Recognition Performance for EMG and Audio+EMG Fusion,” IEEE Engineering in Medicine and Biology Conference (EMBC), 2026 (Submitted).",
+      description: "IEEE-style citation",
+      tech: ["Submitted"]
     },
     {
-      title: "Movie Data Analysis",
-      description: "Explored movie data to analyze relationships between budget, revenue, and ratings using Python, Pandas, and Seaborn.",
-      tech: ["Python", "Pandas", "Seaborn"],
-      link: "https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/netflix%20-%20Copy.py"
+      title: "R. N. Khushaba, O. Abulayla, J. Matouq, and A. Al-Jumaily, “A Robust Wavelet Scattering Front-End for Cross-Subject EMG-Based Speech Recognition,” IEEE Engineering in Medicine and Biology Conference (EMBC), 2026 (Submitted).",
+      description: "IEEE-style citation",
+      tech: ["Submitted"]
     },
     {
-      title: "Supermarket Sales Analysis",
-      description: "Analyzed supermarket sales data to identify trends in product performance, customer behavior, and branch efficiency.",
-      tech: ["Python", "Data Analysis", "Business Intelligence"],
-      link: "https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Supermarket%20Analysis.py"
-    },
-    {
-      title: "Pitch Analysis in Parkinson's Disease",
-      description: "Analyzed vocal pitch data to identify differences between healthy individuals and those with Parkinson's Disease using Python, Pandas, Matplotlib, and Seaborn.",
-      tech: ["Python", "Medical Data", "Statistical Analysis"],
-      link: "https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Parkinsons"
-    },
-    {
-      title: "Breast Cancer Dataset Analysis",
-      description: "Explored a Breast Cancer dataset to analyze tumor characteristics and their correlation with diagnosis using Python, Seaborn, and Matplotlib.",
-      tech: ["Python", "Medical Data", "Machine Learning"],
-      link: "https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Breastcancer.py"
-    },
-    {
-      title: "FIFA World Cup Goals Analysis",
-      description: "Analyzed goal distributions in men's and women's FIFA World Cup matches using Python, Pandas, and Seaborn. Applied the Mann-Whitney U test to compare scoring patterns.",
-      tech: ["Python", "Statistical Testing", "Sports Analytics"] 
-    },
-    {
-      title: "Diabetes Prediction Model",
-      description: "Developed a logistic regression model using Statsmodels to predict diabetes based on glucose levels, with real-time user input.",
-      tech: ["Machine Learning", "Logistic Regression", "Predictive Modeling"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/prediction_model.py"
-    },
-    {
-      title: "Heart Failure Risk Analysis",
-      description: "Evaluated logistic regression models on clinical records to predict heart failure risk using features like smoking, diabetes, and high blood pressure.",
-      tech: ["Machine Learning", "Healthcare", "Risk Analysis"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/heart_failure.py"
-    },
-    {
-      title: "Car Insurance Claim Prediction",
-      description: "Mapped driving experience to numeric values and used logistic regression to predict if an insurance claim will be filed based on user input.",
-      tech: ["Machine Learning", "Insurance", "Predictive Analytics"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/car_insurance_to_predict.py"
-    },
-    {
-      title: "Soil Measures Crop Prediction",
-      description: "Evaluated soil nutrient features using multinomial logistic regression to predict crop type and identified the best predictor based on F1-scores.",
-      tech: ["Machine Learning", "Agriculture", "Classification"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/project10.py"
-    },
-    {
-      title: "Penguins Clustering Analysis",
-      description: "Applied K-Means clustering on the penguins dataset after scaling numeric features and computed cluster-wise averages.",
-      tech: ["Unsupervised Learning", "K-Means", "Data Clustering"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/project11.py"
-    },
-    {
-      title: "Rental Duration Prediction",
-      description: "Built a K-Nearest Neighbors regression model to predict rental duration based on amount paid, release year, rental rate, and movie length.",
-      tech: ["KNN", "Regression", "Predictive Modeling"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/Movie_pred_from_user.py"
-    },
-    {
-      title: "Airbnb Market Analysis",
-      description: "Merged multiple Airbnb datasets to evaluate listing details including pricing, review dates, and room types, with visualizations of average prices and listing counts.",
-      tech: ["Data Merging", "Market Analysis", "Visualization"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/Airbnb_project.py"
-    },
-    {
-      title: "Mall Customers Clustering",
-      description: "Segmented mall customers using K-Means clustering based on annual income and spending score, employing the elbow method to determine optimal clusters.",
-      tech: ["Customer Segmentation", "K-Means", "Business Analytics"],
-      link: "https://github.com/OmarAbuLayla/portfolio/blob/main/projects/Mall.py"
+      title: "J. Matouq, O. Abulayla, R. N. Khushaba, “Benchmarking MFSC and Wavelet Scattering Feature Representations for EMG-Based Speech Recognition,” IEEE Transactions, 2026 (In Progress).",
+      description: "IEEE-style citation",
+      tech: ["In Progress"]
     }
   ];
 
   const skills = [
-    { name: "Python", icon: "🐍" },
-    { name: "SQL", icon: "🗃️" },
-    { name: "Pandas", icon: "🐼" },
-    { name: "NumPy", icon: "🔢" },
-    { name: "Matplotlib", icon: "📊" },
-    { name: "Seaborn", icon: "📈" },
-    { name: "Machine Learning", icon: "🤖" },
-    { name: "Statistical Analysis", icon: "📊" },
-    { name: "Data Cleaning", icon: "🧹" },
-    { name: "Exploratory Data Analysis (EDA)", icon: "🔍" },
-    { name: "Generative AI", icon: "✨" },
-    { name: "Transformers (LLMs)", icon: "🧠" },
-    { name: "RAG Pipelines", icon: "🔗" },
-    { name: "Hugging Face", icon: "🤗" },
-    { name: "Embeddings & FAISS", icon: "🎯" },
-    { name: "OpenAI API", icon: "⚡" },
-    { name: "Vector Search", icon: "🔍" },
-    { name: "Flask APIs", icon: "🌐" }
+    { name: "Signal Processing", icon: "📶" },
+    { name: "EMG Preprocessing", icon: "🧪" },
+    { name: "Feature Extraction", icon: "🔍" },
+    { name: "Time–Frequency Analysis", icon: "📊" },
+    { name: "Wavelet-Based Front-Ends", icon: "🌊" },
+    { name: "Deep Learning for Time-Series", icon: "🧠" },
+    { name: "Sequence Modeling", icon: "⏱️" },
+    { name: "Transformer Architectures", icon: "🤖" },
+    { name: "Subject-Independent Training", icon: "👥" },
+    { name: "Cross-Subject Evaluation", icon: "📈" },
+    { name: "Python, NumPy, Pandas, PyTorch", icon: "🐍" },
+    { name: "Jupyter, Git, LaTeX", icon: "📝" }
+  ];
+
+  const navItems = [
+    { label: 'Research Summary', id: 'about' },
+    { label: 'Technical Skills', id: 'skills' },
+    { label: 'Research', id: 'projects' },
+    { label: 'Contact', id: 'contact' }
   ];
 
   return (
@@ -175,13 +104,13 @@ const Portfolio = () => {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
                   className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-[#e8f5e9] rounded-full transition-all duration-300"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
               <a
@@ -215,16 +144,16 @@ const Portfolio = () => {
           {isMobileMenuOpen && (
             <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100">
               <div className="px-2 pt-2 pb-3 space-y-1">
-                {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+                {navItems.map((item) => (
                   <button
-                    key={item}
+                    key={item.id}
                     onClick={() => {
-                      scrollToSection(item.toLowerCase());
+                      scrollToSection(item.id);
                       setIsMobileMenuOpen(false);
                     }}
                     className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-[#e8f5e9] rounded-md transition-all duration-300"
                   >
-                    {item}
+                    {item.label}
                   </button>
                 ))}
                 <a
@@ -261,18 +190,17 @@ const Portfolio = () => {
             Omar Abu Layla
           </h1>
           <h2 className="text-2xl md:text-3xl font-light text-gray-600 mb-6 animate-fade-in-delay-1">
-            AI Developer & Data Scientist
+            Research Assistant | Biomedical Signal Processing & Deep Learning
           </h2>
           <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-delay-2">
-            Passionate about Data Science, Machine Learning, and AI Development. 
-            Building intelligent solutions that make a difference.
+            Developing robust EMG-based speech recognition systems using signal processing and deep learning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-3">
             <button
               onClick={() => scrollToSection('projects')}
               className="px-8 py-4 bg-[#34a853] text-white font-medium rounded-full hover:bg-[#2d8f47] transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              View My Work
+              View Research
             </button>
             <button
               onClick={() => scrollToSection('contact')}
@@ -288,7 +216,7 @@ const Portfolio = () => {
       <section id="about" className={`py-20 ${isVisible.about ? 'animate-fade-in-up' : 'opacity-0'}`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Research Summary</h2>
             <div className="w-20 h-1 bg-[#34a853] mx-auto"></div>
           </div>
           <div className="max-w-4xl mx-auto">
@@ -299,27 +227,25 @@ const Portfolio = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900">Professional Journey</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">Research Focus</h3>
               </div>
               
               <p className="text-gray-600 leading-relaxed mb-6">
-                As an Associate Data Scientist certified through DataCamp's comprehensive 120-hour career track, 
-                I've mastered the complete data science pipeline from data wrangling to machine learning deployment.
+                My research focuses on EMG-based speech recognition, with an emphasis on developing robust signal processing pipelines that integrate time–frequency and wavelet-based feature representations with deep learning architectures.
               </p>
               
               <div className="bg-white p-6 rounded-xl mb-6">
-                <h4 className="font-semibold text-gray-900 mb-3">DataCamp Certification Highlights:</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">Research Themes:</h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• 23 courses covering Python, data analysis, and ML</li>
-                  <li>• 3 certification exams with hands-on projects</li>
-                  <li>• Advanced topics: Statistical Analysis, SQL, AI Development</li>
-                  <li>• Real-world applications: Built Hayat AI and Complyt AI</li>
+                  <li>• Biomedical signal processing and multi-channel EMG analysis</li>
+                  <li>• Deep learning for time-series and sequence modeling</li>
+                  <li>• Cross-subject (subject-independent) generalization</li>
+                  <li>• Assistive technologies and human–machine interaction systems</li>
                 </ul>
               </div>
               
               <p className="text-gray-600 leading-relaxed">
-                I specialize in building AI-powered applications, from medical diagnostic tools to regulatory 
-                compliance analyzers, combining cutting-edge LLM technology with robust data science foundations.
+                A central objective of this work is improving cross-subject (subject-independent) generalization, addressing the significant variability inherent in multi-channel biomedical signals. Rather than treating deep learning models as black boxes, my work examines how representation design influences temporal stability, learning dynamics, and generalization performance, with relevance to assistive technologies and human–machine interaction systems.
               </p>
             </div>
           </div>
@@ -356,13 +282,13 @@ const Portfolio = () => {
       <section id="projects" className={`py-20 ${isVisible.projects ? 'animate-fade-in-up' : 'opacity-0'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Featured Work</h2>
+            <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Research Experience & Publications</h2>
             <div className="w-20 h-1 bg-[#34a853] mx-auto"></div>
           </div>
 
           {/* Featured AI Projects */}
           <div className="mb-20">
-            <h3 className="text-2xl font-medium text-gray-900 mb-8 text-center">AI Development Projects</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-8 text-center">Research Experience</h3>
             <div className="grid md:grid-cols-2 gap-8">
               {aiProjects.map((project, index) => (
                 <div
@@ -385,14 +311,6 @@ const Portfolio = () => {
                       </span>
                     ))}
                   </div>
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#34a853] font-medium hover:text-[#2d8f47] transition-colors"
-                  >
-                    View Project →
-                  </a>
                 </div>
               ))}
             </div>
@@ -400,7 +318,7 @@ const Portfolio = () => {
 
           {/* Data Science Projects */}
           <div>
-            <h3 className="text-2xl font-medium text-gray-900 mb-8 text-center">Data Science Projects</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-8 text-center">Publications</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {dataProjects.map((project, index) => (
                 <div
@@ -423,19 +341,12 @@ const Portfolio = () => {
                       </span>
                     ))}
                   </div>
-                  {project.link && (
-                    <a 
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 font-medium hover:text-blue-700 transition-colors"
-                    >
-                      View Project →
-                    </a>
-                  )}
                 </div>
               ))}
             </div>
+            <p className="text-gray-600 mt-8 text-center leading-relaxed">
+              Manuscripts are under review or in preparation. Preprints are available upon request.
+            </p>
           </div>
         </div>
       </section>
@@ -443,11 +354,10 @@ const Portfolio = () => {
       {/* Contact Section */}
       <section id="contact" className={`py-20 bg-gray-50 ${isVisible.contact ? 'animate-fade-in-up' : 'opacity-0'}`}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">Contact</h2>
           <div className="w-20 h-1 bg-[#34a853] mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-            Ready to collaborate on your next AI or data science project? 
-            Let's discuss how we can bring your ideas to life.
+            I welcome discussions on PhD opportunities and collaborative research in biomedical signal processing, EMG-based speech recognition, and deep learning.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
